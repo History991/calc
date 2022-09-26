@@ -6,6 +6,7 @@
 # 1 m3 = 11,70 kwh
 # 1 kwh = 0.8547008547008547008 m3
 import math # importamos la libreria math
+while True: # bucle infinito
 def m3_to_kwh(): # definimos la funcion m3_to_kwh
     m3_gas = float(input("Introduce los m3 de gas natural: ")) # pedimos los m3 de gas natural
     kwh_gas = m3_gas * 11.70 # calculamos los kwh de gas natural
@@ -15,4 +16,5 @@ def m3_to_kwh(): # definimos la funcion m3_to_kwh
     m3_gas = kwh_gas * 0.8547008547008547008 # calculamos los m3 de gas natural
     print("El valor de los kwh de gas natural es: ", m3_gas, "m3")   # mostramos el resultado
     del m3_gas, kwh_gas # eliminamos las variables
-m3_to_kwh() # llamamos a la funcion m3_to_kwh
+if __name__ == '__main__': 
+    m3_to_kwh() # llamamos a la funcion m3_to_kwh
